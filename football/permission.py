@@ -35,3 +35,4 @@ class AdminOrUserPermissionClass(BasePermission):
         if request.user.roles == 1 or request.user.roles == 3:
             return True
         return False
+
