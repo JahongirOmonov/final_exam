@@ -11,4 +11,4 @@ urlpatterns=[
     path('createreserve/',CreateReserve.as_view()),
     path('patchreserve/',PatchReserve.as_view())
     #searches
-
+]
