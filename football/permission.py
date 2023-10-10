@@ -34,4 +34,5 @@ class AdminOrUserPermissionClass(BasePermission):
     def has_permission(self, request, view):
         if request.user.roles == 1 or request.user.roles == 3:
             return True
-        return False 
+        return False
+

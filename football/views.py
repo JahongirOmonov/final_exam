@@ -41,4 +41,3 @@ class PatchReserve(generics.RetrieveUpdateDestroyAPIView):
     serializer_class=ReserveSerializer
     permission_classes=(IsAuthenticated,AdminOrOwnerStadiumPermissionClass)
 
-#searches

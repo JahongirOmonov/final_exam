@@ -69,7 +69,7 @@ REST_FRAMEWORK = {
     )
     
 }
-# AUTH_USER_MODEL="account.CustomUser"
+AUTH_USER_MODEL="account.CustomUser"
 
 
 ROOT_URLCONF = 'config.urls'

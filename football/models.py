@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from account.models import CustomUser
 
 
 # Create your models here.
@@ -13,6 +14,7 @@ class FieldModel(models.Model):
     price_per_hour=models.IntegerField(default=50)
     stadium_length=models.IntegerField(default=10)
     stadium_width=models.IntegerField(default=10)
+    user=models.ForeignKey(CustomUser, on_delete=models.CASCADE, default=1)
 
 
 
