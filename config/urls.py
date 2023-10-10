@@ -23,9 +23,17 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('football/token/', TokenObtainPairView.as_view(), name='token_obtain_pair')
 
 ]
+
+from django.conf.urls.i18n import i18n_patterns
+
+urlpatterns +=i18n_patterns(
+    path('football/',include('football.urls'))
+)
+
+
 
 
 

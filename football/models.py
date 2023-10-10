@@ -30,6 +30,12 @@ class ReserveModel(models.Model):
     end_time = models.CharField(default='', max_length=50)
     field=models.ForeignKey(FieldModel, on_delete=models.CASCADE)
 
+    class Meta:
+        db_table = 'book'
+
+    def __str__(self) -> str:
+        return self.day
+
 
 
 
